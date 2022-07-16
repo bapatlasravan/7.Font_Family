@@ -1,0 +1,172 @@
+<html>
+<head><title>Font-family</title>
+<link rel="stylesheet" href="D:\CSS\CSS external styles\h1.css">
+<link rel="stylesheet" href="D:\CSS\CSS external styles\h2.css">
+<style>
+#syntax{
+	background-color:cyan;
+}
+#note{
+	color:red;
+	background-color:yellow;
+}
+.p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+p.normal {
+  font-style: normal;
+}
+
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+
+p#normal {
+  font-weight: normal;
+}
+
+p.light {
+  font-weight: lighter;
+}
+
+p.thick {
+  font-weight: bold;
+}
+p.normal2 {
+  font-variant: normal;
+}
+
+p.small {
+  font-variant: small-caps;
+}
+#a {
+  font-size: 60px;
+}
+
+#b {
+  font-size: 40px;
+}
+
+#c {
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+	<h1><u><center>Font-family</center></u></h2>
+		<P>CSS Fonts is a module of CSS that defines font-related properties and how font resources are loaded. 
+		It lets you define the style of a font, such as its family, size and weight, The syntax of the font family 
+		was: </P>
+			<p id="syntax">selector:{<br>
+						fontfamily:"font name";<br>
+						}<br>
+		<h3><u>Example:</u></h3>
+			<p class="p1">This is a paragraph, shown in the Times New Roman font.</p>
+			<p class="p2">This is a paragraph, shown in the Arial font.</p>
+			<p class="p3">This is a paragraph, shown in the Lucida Console font.</p>
+
+		<p id="note"><u>Note:</u>The font-family property should hold several font names as a "fallback" system,
+		to ensure maximum compatibility between browsers/operating systems. Start with the font you want,
+		and end with a generic family (to let the browser pick a similar font in the generic family, 
+		if no other fonts are available). The font names should be separated with comma.</p><hr><hr>
+
+
+
+	<h2><u>Font-style:</u></h2>
+		<p>The font-style is the property of the font family. Font style property has three values, they are: </p>
+
+			<li>normal - The text is shown normally</li>
+			<li>italic - The text is shown in italics</li>
+			<li>oblique - The text is "leaning" (oblique is very similar to italic, but less supported)</li>
+		<p id="syntax">The syntax for the font style property was:<br>
+			selector:{<br>
+				font-style:normal(or)italic(or)oblique;<br>
+				}<br></p>
+
+		<h3><u>Example:</u></h3>
+			
+			<p class="normal">This is a paragraph in normal style.</p>
+			<p class="italic">This is a paragraph in italic style.</p>
+			<p class="oblique">This is a paragraph in oblique style.</p><hr><hr>
+
+
+
+	<h2><u>Font-weight:</u></h2>
+			<p>The font-weight property sets how thick or thin characters in text should be displayed.the atrributes that are in the font-weight are:</p>
+				<li>Normal</li>
+				<li>Lighter</li>
+				<li>Bold</li>
+			<p id="syntax">The syntax for the font-weight was:<br>
+
+				selector:{<br>
+					font-weight:normal(or)Lighter(or)bold;<br>
+					}<br>
+
+		<h3><u>Example:</u></h3>
+
+			<p id="normal">This is a normal attribute paragraph.</p>
+			<p class="light">This is a Lighter attribute paragraph.</p>
+			<p class="thick">This is a Bold attribute paragraph.</p><hr><hr>
+
+
+
+	<h2><u>Font-variant:</u></h2>
+			<p>In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted uppercase letters appears in a
+			smaller font size than the original uppercase letters in the text. The font-variant property specifies whether or not a text should be 
+			displayed in a small-caps font. there are two attributes in the fontvariant they are:</p>
+				<li>normal</li>
+				<li>small-caps</li>
+			<p id="syntax">The syntax for the font variant was:<br>
+					selector{<br>
+						font-variant:normal(or)lowercase;<br>
+						}<br></p>
+
+		<h3><u>Example:</u></h3>
+
+				<p class="normal2">My name is Hege Refsnes.</p>
+				<p class="small">My name is Hege Refsnes.</p><hr><hr>
+
+
+
+
+	<h2><u>Font-size:</u></h2>
+			<p>The font-size property sets the size of the text.Being able to manage the text size is important in web design. 
+			However, you should not use font size adjustments to make paragraphs look like headings, or headings look like paragraphs.
+			Always use the proper HTML tags, like &lth1&gt - &lt h6&gt for headings and &lt p&gt for paragraphs.</p>
+		
+
+		<h3><u>Example:</u></h3>
+
+				
+				<p id="a">This is paragraph is in 60px</p>
+				<p id="b">his is paragraph is in 40px</p>
+				<p id="c">his is paragraph is in 20px</p>
+				<p >This paragraph has no size.</p>
+
+
+			<p id="note">Note: If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).</p>
+
+
+
+
+
+
+					<hr><center>**********************************************</center><hr>
+
+
+
+
+</body>
+</html>
